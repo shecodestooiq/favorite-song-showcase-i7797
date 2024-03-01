@@ -7,6 +7,22 @@
   </head>
 
   <body>
+    <div id="formArea">
+      <h1>Share Your Favorite Song</h1>
+      <form onsubmit="event.preventDefault(); displaySongInfo();">
+          <label for="songName">Song Name:</label><br>
+          <input type="text" id="songName" required><br>
+          <label for="youtubeLink">YouTube Link:</label><br>
+          <input type="text" id="youtubeLink" required><br>
+          <label for="description">Description:</label><br>
+          <textarea id="description" required></textarea><br>
+          <label for="year">Year First Listened:</label><br>
+          <input type="number" id="year" required><br><br>
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+  
+  <div id="displayArea" style="display: none;"></div>
     <script src="index.js"></script>
   </body>
 </html>
